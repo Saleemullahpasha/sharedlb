@@ -1,4 +1,4 @@
-def call name() {
+def call(name) {
 
   echo " Hi ${name}, How are you? "
 
