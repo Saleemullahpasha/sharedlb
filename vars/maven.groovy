@@ -1,3 +1,5 @@
+def call(String repoUrl) {
+
 pipeline {
        agent any
        tools {
@@ -7,8 +9,8 @@ pipeline {
        stages {
            stage("Tools initialization") {
                steps {
-                   mvn --version
-                   java -version
+                  sh "mvn --version"
+                  sh "java -version"
                }
            }
            stage("Checkout Code") {
@@ -34,3 +36,4 @@ pipeline {
            }
        }
  }
+}
