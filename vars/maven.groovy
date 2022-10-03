@@ -9,8 +9,8 @@ pipeline {
        stages {
            stage("Tools initialization") {
                steps {
-                  mvn --version
-                  java -version
+                 bat  "mvn --version"
+                 bat  "java -version"
                }
            }
            stage("Checkout Code") {
