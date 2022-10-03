@@ -7,8 +7,8 @@ pipeline {
        stages {
            stage("Tools initialization") {
                steps {
-                   sh "mvn --version"
-                   sh "java -version"
+                   mvn --version
+                   java -version
                }
            }
            stage("Checkout Code") {
