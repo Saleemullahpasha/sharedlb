@@ -21,17 +21,17 @@ pipeline {
            }
            stage("Cleaning workspace") {
                steps {
-                   mvn clean
+                  bat "mvn clean"
                }
            }
            stage("Running Testcase") {
               steps {
-                   mvn test
+                  bat "mvn test"
                }
            }
            stage("Packing Application") {
                steps {
-                   mvn package -DskipTests
+                  bat "mvn package -DskipTests"
                }
            }
        }
