@@ -24,9 +24,9 @@ pipeline {
                   bat "mvn clean"
                }
            }
-           stage("Running Testcase") {
+           stage("Running Install") {
               steps {
-                  bat "mvn test"
+                  bat "mvn install"
                }
            }
            stage("Packing Application") {
