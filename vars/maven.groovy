@@ -15,8 +15,8 @@ pipeline {
            }
            stage("Checkout Code") {
                steps {
-                   git branch: 'master',
-                       url: "https://github.com/Saleemullahpasha/hello-world.git"
+                   git branch: 'main',
+                       url: "${repoUrl}"
                }
            }
            stage("Cleaning workspace") {
