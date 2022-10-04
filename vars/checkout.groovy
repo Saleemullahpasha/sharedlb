@@ -6,9 +6,6 @@ def call(String repoUrl) {
     stage('Code Checkout'){
       cleanWs()
       git branch: '${GIT_BRANCH}', url: "$repoUrl"
-      //IMAGETAG= readFile('.git/commit-id').trim()
-      sh 'echo $IMAGETAG'
-      echo IMAGETAG
     } 
   }
 }
