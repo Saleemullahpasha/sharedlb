@@ -1,4 +1,4 @@
-def call() {
+def call(String GITURL) {
 
 node {
   env.NAMEMVC="${JOB_BASE_NAME}"
