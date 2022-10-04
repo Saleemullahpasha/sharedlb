@@ -5,7 +5,7 @@ def call(String repoUrl) {
     env.IMAGETAG="${BUILD_NUMBER}"  
     stage('Code Checkout'){
       cleanWs()
-      git branch: '${GIT_BRANCH}', credentialsId: 'gitrepo', url: "$repoUrl"
+      git branch: '${GIT_BRANCH}', url: "$repoUrl"
       sh "git rev-parse --short HEAD > .git/commit-id"
       //IMAGETAG= readFile('.git/commit-id').trim()
       sh 'echo $IMAGETAG'
