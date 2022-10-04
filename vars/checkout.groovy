@@ -1,6 +1,6 @@
 def call() {
 
-node{
+node {
   env.NAMEMVC="${JOB_BASE_NAME}"
   env.NAMESPACE="integration"
   env.IMAGENAME="registry.local/msa/${JOB_BASE_NAME}"
@@ -21,5 +21,6 @@ stage('Code Checkout'){
   sh 'echo $IMAGETAG'
   echo IMAGETAG
 
-   }
+    }
+  }
 }
