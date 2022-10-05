@@ -11,7 +11,7 @@ def call(String GITURL) {
         def maventool = tool name: 'maven', type: 'maven'
         withEnv( ["PATH+MAVENTOOL=${maventool}/bin"] ) {
         bat 'mvn clean install -DskipTests'
-      
+        }
     }
   }
 }
