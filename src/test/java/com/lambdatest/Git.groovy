@@ -1,4 +1,4 @@
-package com.mycompany.colinbut
+package test.java.com.lambdatest
 
 class Git implements Serializable {
 
@@ -9,7 +9,7 @@ class Git implements Serializable {
     }
 
     def checkout(String repo) {
-        this.script.git credentialsId: Constants.JENKINS_GITHUB_CREDENTIALS_ID, url: "https://github.com/colinbut/${repo}.git"
+        this.script.git credentialsId: Constants.JENKINS_GITHUB_CREDENTIALS_ID, url: "https://github.com/Saleemullahpasha/${repo}.git"
     }
 
     String commitHash() {
