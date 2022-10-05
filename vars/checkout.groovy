@@ -1,10 +1,7 @@
 def call(String GITURL) {
 
   cleanWs()
-  git branch: '${GIT_BRANCH}', credentialsId: 'gitrepo', url: "$GITURL"
-
+  git branch: 'main', credentialsId: 'gitrepo', url: "$GITURL"
   sh "git rev-parse --short HEAD > .git/commit-id"
-  //IMAGETAG= readFile('.git/commit-id').trim()
-  sh 'echo $IMAGETAG'
-  echo IMAGETAG
+  
 }
