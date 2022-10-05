@@ -5,5 +5,10 @@ def call(String GITURL) {
       cleanWs()
       git branch: 'main', url: "$GITURL"
     }
+    stage ('Compile') {
+      bat  "mvn --version"
+      bat "mvn clean install -DskipTests"
+      
+    }
   }
 }
