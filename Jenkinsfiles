@@ -1,0 +1,29 @@
+
+#Jenkinsfile1 
+@Library('pipeline-library-demo')_
+import test.java.com.lambdatest.QdnqnLib
+node("cicdAgent") {
+  def qdnqn = new QdnqnLib(this)
+  stage("Rename File"){
+    qdnqn.RenameFile("${env.WORKSPACE}old","${env.WORKSPACE}new")
+    echo 'hello'
+  }
+  stage("WhoAmI"){
+    qdnqn.WhoAmI("Jenkinsfile1")
+    echo 'hello'
+  }
+}
+#Jenkinsfile2 
+@Library('pipeline-library-demo')_
+import test.java.com.lambdatest.QdnqnLib
+node("cicdAgent") {
+  def qdnqn = new QdnqnLib(this)
+  stage("Rename File"){
+    qdnqn.RenameFile("${env.WORKSPACE}old","${env.WORKSPACE}new")
+    echo 'hello'
+  }
+  stage("WhoAmI"){
+    qdnqn.WhoAmI("Jenkinsfile2")
+    echo 'hello'
+  }
+}
