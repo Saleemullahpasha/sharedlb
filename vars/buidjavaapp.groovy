@@ -1,4 +1,4 @@
-import test.java.com.lambdatest
+import test.java.com.lambdatest.Git
 
 def call(Map args=[:], Closure body={}) {
     node {
