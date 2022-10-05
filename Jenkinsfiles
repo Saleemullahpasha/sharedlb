@@ -1,5 +1,4 @@
 
-#Jenkinsfile1 
 @Library('pipeline-library-demo')_
 import test.java.com.lambdatest.QdnqnLib
 node("cicdAgent") {
@@ -13,7 +12,7 @@ node("cicdAgent") {
     echo 'hello'
   }
 }
-#Jenkinsfile2 
+
 @Library('pipeline-library-demo')_
 import test.java.com.lambdatest.QdnqnLib
 node("cicdAgent") {
