@@ -1,4 +1,4 @@
-def call() {
+def call(string GITURL) {
 
   cleanWs()
   git branch: '${GIT_BRANCH}', credentialsId: 'gitrepo', url: "$GITURL"
