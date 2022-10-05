@@ -1,4 +1,4 @@
-import com.mycompany.colinbut.Git
+import test.java.com.lambdatest.Git
 
 def call(Map args=[:], Closure body={}) {
     node {
