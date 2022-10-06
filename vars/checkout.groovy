@@ -16,6 +16,16 @@ def call(String GITURL) {
       echo "SonarQube Test Start"
       
         }
+    stage ('Docker') {
+   
+      echo "SonarQube Test Start"
+      
+        }
+    stage ('Kubernetes') {
+   
+      echo "SonarQube Test Start"
+      
+        }
        
     }
   }
