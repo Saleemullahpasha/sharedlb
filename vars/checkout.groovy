@@ -5,7 +5,7 @@ def call(String GITURL) {
       cleanWs()
       git branch: 'main', url: "$GITURL"
     }
-    
+  /*  
     stage ('Compile') {
       bat "mvn clean"
       bat "mvn install"
@@ -22,5 +22,6 @@ def call(String GITURL) {
       '-Dsonar.java.binaries=$WORKSPACE/ '
       
         }
+        */
     }
   }
